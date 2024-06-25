@@ -1,4 +1,4 @@
-const init = () => {
+const initBlog = () => {
     const submitButton = document.querySelector('#submit')
     submitButton.addEventListener('click', (evt) => {
         evt.preventDefault();
@@ -25,6 +25,8 @@ const init = () => {
             location.reload()
         })
     })
+
+    
 }
 
-document.addEventListener('DOMContentLoaded', init, false);
+document.addEventListener('DOMContentLoaded', initBlog, false);

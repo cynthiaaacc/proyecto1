@@ -5,13 +5,22 @@
   @slot('script')
     <script src="/blog/index.js"></script>
   @endslot
+  <i class="material-icons">wb_sunny</i>
+  <label class="inline-flex items-center cursor-pointer">
+    <input id="toggle" type="checkbox" value="" class="sr-only peer">
+    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+    
+    <i class="material-icons">brightness_2</i>
+  
+  </label>
+  
 
-  <form>
+<form>
     <label for="title">Title:</label><br>
     <input type="text" id="title" name="title"><br>
     <label for="message">Message:</label><br>
-    <input type="text" id="message" name="message"><br><br>
-    <button id="submit" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+    <input type="text" id="message" name="message" class="out"><br><br>
+    <button id="submit" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue -300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
     <div id="loading" role="status" class="hidden">
       <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
@@ -19,7 +28,10 @@
       </svg>
       <span class="sr-only">Loading...</span>
     </div>
+    
   </form> 
+
+  
   
   <h1 class="text-3xl font-bold underline text-clifford">
     Welcome to my blog!
@@ -36,3 +48,5 @@
     @end
   </ul>
 @end
+
+
