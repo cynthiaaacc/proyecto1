@@ -1,6 +1,8 @@
 const globalInit = () => {
     const toggle = document.querySelector("#toggle");
+    const navBar = document.querySelector("#navbar");
     let darkmode = localStorage.getItem('darkmode') === 'true' ? true : false;
+
 
     const setDarkMode = (dark) => {
       const html = document.querySelector("html");
